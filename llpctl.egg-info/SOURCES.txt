@@ -1,0 +1,8 @@
+README.md
+setup.py
+llpctl.egg-info/PKG-INFO
+llpctl.egg-info/SOURCES.txt
+llpctl.egg-info/dependency_links.txt
+llpctl.egg-info/entry_points.txt
+llpctl.egg-info/requires.txt
+llpctl.egg-info/top_level.txt
