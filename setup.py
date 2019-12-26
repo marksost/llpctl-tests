@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='llpctl',
-    version='0.2.3',
+    version='0.2.4',
     py_modules=['llpctl'],
     install_requires=[
         'click==7.0',
