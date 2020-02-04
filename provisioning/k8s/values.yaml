@@ -1,0 +1,50 @@
+# The k8s namespace to deploy to
+namespace: default
+
+# RBAC settings
+rbac:
+  roleBindingName: gateway
+  roleName: gateway
+  serviceAccountName: gateway
+
+# Service settings
+services:
+  admin:
+    name: gateway-admin
+    type: NodePort
+    port: 8001
+    targetPort: 8001
+    labels:
+      app: gateway
+      name: gateway
+      role: admin
+    selector:
+      app: gateway
+      name: gateway
+      role: admin
+  proxy:
+    name: gateway-proxy
+    type: NodePort
+    port: 80
+    targetPort: 8000
+    labels:
+      app: gateway
+      name: gateway
+      role: proxy
+    selector:
+      app: gateway
+      name: gateway
+      role: proxy
+
+# Ingress settings
+ingress:
+  name: gateway-ingress
+  labels:
+    app: gateway
+    name: gateway
+    role: ingress
+  hosts:
+    - name: foo
+      tld: foo.leaflink.com
+    - name: bar
+      tld: bar.leaflink.com

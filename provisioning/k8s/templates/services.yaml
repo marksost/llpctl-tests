@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.services.admin.name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- range $k, $v := .Values.services.admin.labels }}
+    {{ $k }}: {{ $v | quote }}
+    {{- end }}
+spec:
+  type: {{ .Values.services.admin.type }}
+  selector:
+    {{- range $k, $v := .Values.services.admin.selector }}
+    {{ $k }}: {{ $v | quote }}
+    {{- end }}
+  ports:
+    - name: {{ .Values.services.admin.name }}
+      port: {{ .Values.services.admin.port }}
+      targetPort: {{ .Values.services.admin.targetPort }}
+      protocol: TCP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.services.proxy.name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- range $k, $v := .Values.services.proxy.labels }}
+    {{ $k }}: {{ $v | quote }}
+    {{- end }}
+spec:
+  type: {{ .Values.services.proxy.type }}
+  selector:
+    {{- range $k, $v := .Values.services.proxy.selector }}
+    {{ $k }}: {{ $v | quote }}
+    {{- end }}
+  ports:
+    - name: {{ .Values.services.proxy.name }}
+      port: {{ .Values.services.proxy.port }}
+      targetPort: {{ .Values.services.proxy.targetPort }}
+      protocol: TCP

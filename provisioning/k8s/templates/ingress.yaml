@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.ingress.name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- range $k, $v := .Values.ingress.labels }}
+    {{ $k }}: {{ $v | quote }}
+    {{- end }}
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+spec:
+  rules:
+    {{- range $h := .Values.ingress.hosts }}
+    - host: {{ $h.tld | quote }}
+      http:
+        paths:
+          - backend:
+              serviceName: {{ $.Values.services.proxy.name }}
+              servicePort: {{ $.Values.services.proxy.port }}
+    {{- end }}
+
+    - http:
+        paths:
+          - backend:
+              serviceName: {{ .Values.services.proxy.name }}
+              servicePort: {{ .Values.services.proxy.port }}
