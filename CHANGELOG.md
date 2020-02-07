@@ -1,10 +1,13 @@
 # Changelog
 ---
 
-## [0.4.0](https://github.com/marksost/llpctl-tests/releases/tag/0.4.0) ([compare](https://github.com/marksost/llpctl-tests/compare/0.3.1...0.4.0))
+## [0.4.0](https://github.com/marksost/llpctl-tests/releases/tag/0.4.0) ([compare](https://github.com/marksost/llpctl-tests/compare/0.3.1...0.4.0)) - 2020-02-07
 
 ### Added
 - Adds Helm chart for generate and deploy testing ([102bc01](https://github.com/marksost/llpctl-tests/commit/102bc019f206729ef333adb38ae3941635d30f50)).
+
+### Misc
+- Updated files for release 0.4.0 ([89d67d6](https://github.com/marksost/llpctl-tests/commit/89d67d6ed6866a8455ee4966fd616e1e9b44c95a)).
 
 
 ## [0.3.1](https://github.com/marksost/llpctl-tests/releases/tag/0.3.1) ([compare](https://github.com/marksost/llpctl-tests/compare/0.3.0...0.3.1)) - 2019-12-26
