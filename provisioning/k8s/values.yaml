@@ -35,16 +35,3 @@ services:
       app: gateway
       name: gateway
       role: proxy
-
-# Ingress settings
-ingress:
-  name: gateway-ingress
-  labels:
-    app: gateway
-    name: gateway
-    role: ingress
-  hosts:
-    - name: foo
-      tld: foo.leaflink.com
-    - name: bar
-      tld: bar.leaflink.com
