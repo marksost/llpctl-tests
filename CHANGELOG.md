@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## [0.6.1](https://github.com/marksost/llpctl-tests/releases/tag/0.6.1) ([compare](https://github.com/marksost/llpctl-tests/compare/0.6.0...0.6.1)) - 2020-02-25
+
+### Misc
+- Updated files for release 0.6.1 ([14ca854](https://github.com/marksost/llpctl-tests/commit/14ca854ad16a0c3d03912e8420b5f9597cbbc0c1)).
+
+
 ## [0.6.0](https://github.com/marksost/llpctl-tests/releases/tag/0.6.0) ([compare](https://github.com/marksost/llpctl-tests/compare/0.5.2...0.6.0)) - 2020-02-25
 
 ### Misc
