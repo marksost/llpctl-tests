@@ -1,9 +1,10 @@
 # Changelog
 ---
 
-## [0.5.3](https://github.com/marksost/llpctl-tests/releases/tag/0.5.3) ([compare](https://github.com/marksost/llpctl-tests/compare/0.5.2...0.5.3))
+## [0.6.0](https://github.com/marksost/llpctl-tests/releases/tag/0.6.0) ([compare](https://github.com/marksost/llpctl-tests/compare/0.5.2...0.6.0)) - 2020-02-25
 
 ### Misc
+- Updated files for release 0.6.0 ([c5d7958](https://github.com/marksost/llpctl-tests/commit/c5d79584671096d9b7f066d47a6a5e493aefc8ba)).
 - Updates to k8s declarations ([0debe6f](https://github.com/marksost/llpctl-tests/commit/0debe6f48dcc3ef91e905455e7c33a9745d6769a)).
 
 
