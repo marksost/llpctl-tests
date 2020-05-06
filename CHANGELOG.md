@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## [0.8.0](https://github.com/marksost/llpctl-tests/releases/tag/0.8.0) ([compare](https://github.com/marksost/llpctl-tests/compare/0.7.0...0.8.0)) - 2020-04-23
+
+### Misc
+- Updated files for release 0.8.0 ([ec4fa7d](https://github.com/marksost/llpctl-tests/commit/ec4fa7dbc82ce847074aeb0ab8dacbabc7ab943f)).
+
+
 ## [0.7.0](https://github.com/marksost/llpctl-tests/releases/tag/0.7.0) ([compare](https://github.com/marksost/llpctl-tests/compare/0.6.2...0.7.0)) - 2020-04-23
 
 ### Misc
